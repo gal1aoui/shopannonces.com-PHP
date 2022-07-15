@@ -36,7 +36,7 @@ $sql_rs_set=db_query($sql_clsi);
 if($res=mysql_fetch_array($sql_rs_set))
 {
 	
-	$sql_img="select * from tbl_classified_image where clsd_id='$res[classified_id]' and img_status='Y'";
+	$sql_img="select * from tbl_classified_image where clsd_id='$res[classified_id]' and img_status='Y' and cls_img_file like 'P%'";
 	$sql_img_set=db_query($sql_img);
 	
 	if(mysql_num_rows($sql_img_set) > 0 ) {

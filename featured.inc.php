@@ -1,7 +1,7 @@
 <?php
 $dtjour= date("Y-m-d");
 
-$mysql_featured="SELECT DISTINCT * FROM tbl_classified WHERE DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > '$dtjour' ORDER BY date_fin_premium DESC LIMIT 0,7"; 
+$mysql_featured="SELECT DISTINCT * FROM tbl_classified WHERE DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > '$dtjour' ORDER BY date_fin_premium DESC LIMIT 0,12"; 
 
 $resultnav_featured = db_query($mysql_featured);
 if(mysql_num_rows($resultnav_featured)!=0){?>

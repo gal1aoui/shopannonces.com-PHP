@@ -23,6 +23,11 @@ $link_curr=get_config_setting(15);
 $rand_key=getRandomString();
 $classi_state = intval($_REQUEST['classi_state']);
 
+
+function conv($string){
+    return preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities($string));
+}
+
 if(is_post_back()) {
 
 	if($action=="Add" && ($_COOKIE[SERVER_NAME]=$_SERVER['SERVER_NAME'])){
@@ -266,44 +271,52 @@ if(is_post_back()) {
 			 $dest_dir="mobile/uploaded_files/classified_img/";
 			 
 			if(!empty($_FILES['file']['name'][0])){		  			  
-			  $name = $_FILES['file']['name'][0];
-              move_uploaded_file($_FILES['file']['tmp_name'][0],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][0]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name', clsd_id='$recID', mem_id='$mem_id' ");
+			  $name = conv($_FILES['file']['name'][0]);
+              $file = basename("P".$mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][0],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file', clsd_id='$recID', mem_id='$mem_id' ");
 			}
 			if(!empty($_FILES['file']['name'][1])){						 
-			  $name = $_FILES['file']['name'][1];
-              move_uploaded_file($_FILES['file']['tmp_name'][1],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][1]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][1]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][1],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}		
 			if(!empty($_FILES['file']['name'][2])){					
-			  $name = $_FILES['file']['name'][2];
-              move_uploaded_file($_FILES['file']['tmp_name'][2],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][2]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][2]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][2],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 			if(!empty($_FILES['file']['name'][3])){							 
-			  $name = $_FILES['file']['name'][3];
-              move_uploaded_file($_FILES['file']['tmp_name'][3],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][3]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][3]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][3],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 			if(!empty($_FILES['file']['name'][4])){							 
-			  $name = $_FILES['file']['name'][4];
-              move_uploaded_file($_FILES['file']['tmp_name'][4],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][4]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][4]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][4],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 			if(!empty($_FILES['file']['name'][5])){							 
-			  $name = $_FILES['file']['name'][5];
-              move_uploaded_file($_FILES['file']['tmp_name'][5],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][5]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][5]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][5],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 			if(!empty($_FILES['file']['name'][6])){							 
-			  $name = $_FILES['file']['name'][6];
-              move_uploaded_file($_FILES['file']['tmp_name'][6],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][6]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][6]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][6],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 			if(!empty($_FILES['file']['name'][7])){							 
-			  $name = $_FILES['file']['name'][7];
-              move_uploaded_file($_FILES['file']['tmp_name'][7],"mobile/uploaded_files/classified_img/".basename($_FILES['file']['name'][7]));
-			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$name',clsd_id='$recID',mem_id='$mem_id'");
+			  $name = conv($_FILES['file']['name'][7]);
+              $file = basename($mem_id.$recID.$name);
+              move_uploaded_file($_FILES['file']['tmp_name'][7],"mobile/uploaded_files/classified_img/".$file);
+			  db_query("INSERT INTO `tbl_classified_image` SET cls_img_file='$file',clsd_id='$recID',mem_id='$mem_id'");
 			}
 	
 		if($principale_select == "818"){
@@ -494,11 +507,13 @@ $_COOKIE[SERVER_NAME]=$_SERVER['SERVER_NAME'];
                   <td align="left">
                 
                   <div id="filestore">
-                    <input name="file[]" id="file1" type="file" class="textbox1" size="44" onChange="readURL(this,blah1);" />
-                        <span style="font-size:9px;">
+                    <div style="border: 1px red solid;">  
+                        <input name="file[]" id="file1" type="file" class="textbox1" size="44" onChange="readURL(this,blah1);" />
+                        <span style="font-size:9px; width: 25%;" >
                         PHOTO PRINCIPALE
                         </span> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <span class="remarque">Taille Max: 3 Mo.</span><br />
+                    </div>
+                    <br/><span class="remarque">Taille Max: 3 Mo.</span><br /><br />
                     <input name="file[]" id="file2" type="file" class="textbox1" size="44" onChange="readURL(this,blah2);" /><br />
                     <input name="file[]" id="file3" type="file" class="textbox1" size="44" onChange="readURL(this,blah3);" /><br />
                     <input name="file[]" id="file4" type="file" class="textbox1" size="44" onChange="readURL(this,blah4);" /><br />
