@@ -1,11 +1,11 @@
 <?php
 $dtjour= date("Y-m-d");
 
-$mysql_featured="SELECT DISTINCT * FROM tbl_classified WHERE DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > '$dtjour' ORDER BY classified_post_date DESC LIMIT 0,7"; 
+$mysql_featured="SELECT DISTINCT * FROM tbl_classified WHERE DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > '$dtjour' ORDER BY date_fin_premium DESC LIMIT 0,7"; 
 
 $resultnav_featured = db_query($mysql_featured);
 if(mysql_num_rows($resultnav_featured)!=0){?>
-	<div id="resultfeatured">
+	<div id="resultfeatured" >
         <h3 class="OnOne">Vos annonces (en avant) ici:</h3>
 	<?php
 		$resultnav_featured = db_query($mysql_featured);

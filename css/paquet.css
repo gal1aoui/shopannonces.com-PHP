@@ -619,7 +619,7 @@ padding :  0 0.3em;
 	border: 1px solid #B7B7B7;
 	border-radius: 2px;
 	padding: 2px;
-	height:160px;
+	height: 300px;
 }
 .OnOne {
 	color: #333;
@@ -636,6 +636,7 @@ padding :  0 0.3em;
     width: 110px;
 	text-align:center;
 	vertical-align:top;
+  margin-top: 25px;
 }
 
 .premium{
