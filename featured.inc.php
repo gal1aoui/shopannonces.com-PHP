@@ -1,22 +1,7 @@
 <?php
 $dtjour= date("Y-m-d");
 
-$mysql_featured="SELECT *
-				FROM tbl_classified, tbl_classified_image
-				WHERE 
-				(
-					DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > DATE_FORMAT('".$dtjour."', '%Y-%m-%d')
-				OR 
-					DATE_FORMAT(`date_fin_republication`, '%Y-%m-%d') > DATE_FORMAT('".$dtjour."', '%Y-%m-%d')
-				OR 
-					DATE_FORMAT(`date_fin_couleur`, '%Y-%m-%d') > DATE_FORMAT('".$dtjour."', '%Y-%m-%d')
-				OR 
-					DATE_FORMAT(`date_fin_urgent`, '%Y-%m-%d') > DATE_FORMAT('".$dtjour."', '%Y-%m-%d')
-				)
-				AND tbl_classified.classified_status='Active'
-			
-				GROUP BY tbl_classified.classified_id
-				ORDER BY tbl_classified.date_fin_premium DESC LIMIT 0,7";
+$mysql_featured="SELECT DISTINCT * FROM tbl_classified WHERE DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > '$dtjour' ORDER BY classified_post_date DESC LIMIT 0,7"; 
 
 $resultnav_featured = db_query($mysql_featured);
 if(mysql_num_rows($resultnav_featured)!=0){?>
