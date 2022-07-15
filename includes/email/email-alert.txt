@@ -1,0 +1,14 @@
+Dear {youf_email}:
+
+Message: A New Classified has been posted in your subscriced category.
+
+Please look at this page by clicking on the URL below:
+
+
+{link}
+
+
+Thanks
+
+{your_email}
+

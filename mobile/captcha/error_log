@@ -1,0 +1,30 @@
+[22-Jan-2011 16:39:31] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 16:39:31] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 16:39:31] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 16:39:31] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 16:39:31] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33
+[22-Jan-2011 16:39:40] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 16:39:40] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 16:39:40] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 16:39:40] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 16:39:40] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33
+[22-Jan-2011 16:50:01] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 16:50:01] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 16:50:01] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 16:50:01] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 16:50:01] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33
+[22-Jan-2011 16:52:20] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 16:52:20] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 16:52:20] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 16:52:20] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 16:52:20] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33
+[22-Jan-2011 17:01:40] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 17:01:40] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 17:01:40] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 17:01:40] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 17:01:40] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33
+[22-Jan-2011 17:01:48] PHP Warning:  imagecreatefrompng(captcha.PNG) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory in /home/keyyin/public_html/captcha/captcha.php on line 24
+[22-Jan-2011 17:01:48] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 25
+[22-Jan-2011 17:01:48] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/keyyin/public_html/captcha/captcha.php on line 31
+[22-Jan-2011 17:01:48] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 32
+[22-Jan-2011 17:01:48] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/keyyin/public_html/captcha/captcha.php on line 33

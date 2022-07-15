@@ -1,0 +1,6 @@
+Dear Member, 
+
+{message}
+
+Thanks {SITE} Team
+{SITE_PATH}

@@ -1,0 +1,11 @@
+Dear {member}, 
+
+A new enquiry has been send by {sender} related with the following {type}-
+
+Warehouse Code:  {code}
+Warehouse Name:  {name}
+
+{message}
+
+The {SITE} Team 
+{SITE_PATH}

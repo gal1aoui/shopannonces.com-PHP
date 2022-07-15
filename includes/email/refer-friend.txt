@@ -1,0 +1,15 @@
+Hi {friend_name},
+
+{your_name} has recommended this website, as $ContactPerson thinks you will like it.
+
+To view the website please click on the following link.
+
+{link}
+
+
+{your_name}
+
+Regards
+
+CL page Team
+

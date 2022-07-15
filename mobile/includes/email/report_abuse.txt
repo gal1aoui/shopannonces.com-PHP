@@ -1,0 +1,5 @@
+A new abuse report has been filed related to the following classified:
+
+Classified ID:  {key}
+
+Classified Title: {title}

@@ -1,0 +1,20 @@
+Dear Member, 
+
+Here is a your event detail that you have posted-
+
+Id:  {key}
+Title: {title}
+Street:{street}
+City:{city}
+State:{state}
+Start Date: {start_date}
+End Date: {end_date}
+Start Time: {start_time}
+End Time: {end_time}
+
+{link}
+
+The {SITE} Team 
+{SITE_PATH}
+
+

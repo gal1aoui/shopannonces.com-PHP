@@ -1,0 +1,18 @@
+AddHandler php-script .html .htm php_flag magic_quotes_gpc on
+Options +FollowSymlinks
+<IfModule mod_rewrite.c>
+RewriteEngine On
+ErrorDocument 404 "/404.php"
+RewriteCond %{HTTP_HOST} ^[^.]*\.[^.]*$
+RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+RewriteRule ([^/]+)-([^/]+)-([^/]+)-([^/]+)\.htm$ classified-listing.php?subcatId=$4
+RewriteRule ([^/]+)-([^/]+)-([^/]+)\.htm$ classified-listing.php?subcatId1=$3
+RewriteRule ([^/]+)-([^/]+)\.htm$ classified-listing.php?catId=$2
+RewriteRule classified/clsId/([^/]+)/([^/]+)/ classified-details.php?clsId=$1
+AddDefaultCharset utf-8
+# ... place more countries here
+Deny from env=BlockCountry
+
+	
+

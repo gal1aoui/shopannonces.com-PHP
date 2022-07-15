@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/************************************carte********************************************/
+
+#carte{/*
+	width:940px;
+	height:466px;
+	background-color:#FFF;
+	border-radius:0px;border:1px solid #CCC;
+	padding:3px;*/
+}
+
+
+#categories{
+	display:inline-block;
+	width:100%;
+}
+
+.col-categ{
+	width: 24%;
+	padding-left:5px;
+	float: left;
+}
+
+.sprite_map{width:455px;height:460px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -2px -2px; }
+.sprite_index_tn_tn_hover_region17{
+	width:50px;height:90px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -726px -140px;margin-left:363px;margin-top:87px;}
+.sprite_index_tn_tn_hover_region18{
+	width:105px;height:132px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1080px -10px;margin-left:94px;margin-top:248px;}
+.sprite_index_tn_tn_hover_region19{
+	width:90px;height:111px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -865px -213px;margin-left:210px;margin-top:199px;}
+.sprite_index_tn_tn_hover_region20{
+	width:100px;height:90px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -470px -260px;margin-left:89px;margin-top:64px;}
+.sprite_index_tn_tn_hover_region21{
+	width:90px;height:100px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -727px -342px;margin-left:240px;margin-top:128px;}
+.sprite_index_tn_tn_hover_region22{
+	width:120px;height:70px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -471px -370px;margin-left:0px;margin-top:102px;}
+.sprite_index_tn_tn_hover_region23{
+	width:100px;height:120px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -610px -140px;margin-left:150px;margin-top:106px;}
+.sprite_index_tn_tn_hover_region24{
+	width:85px;height:125px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -608px -5px;margin-left:252px;margin-top:43px;}
+.sprite_index_tn_tn_hover_region25{
+	width:40px;height:80px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1150px -390px;margin-left:414px;margin-top:370px;}
+.sprite_index_tn_tn_hover_region26{
+	width:63px;height:83px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -726px -250px;margin-left:314px;margin-top:147px;}
+.sprite_index_tn_tn_hover_region39{
+	width:60px;height:55px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1130px -325px;margin-left:255px;margin-top:412px;}
+.sprite_index_tn_tn_hover_region41{
+	width:50px;height:55px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1140px -160px;margin-left:139px;margin-top:407px;}
+.sprite_index_tn_tn_hover_region27{
+	width:75px;height:75px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -470px -170px;margin-left:141px;margin-top:45px;}
+.sprite_index_tn_tn_hover_region28{
+	width:70px;height:60px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -610px -280px;margin-left:196px;margin-top:89px;}
+.sprite_index_tn_tn_hover_region29{
+	width:105px;height:120px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -965px -105px;margin-left:200px;margin-top:281px;}
+.sprite_index_tn_tn_hover_region30{
+	width:65px;height:78px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -870px -120px;margin-left:172px;margin-top:216px;}
+.sprite_index_tn_tn_hover_region31{
+	width:100px;height:90px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -610px -360px;margin-left:297px;margin-top:69px;}
+.sprite_index_tn_tn_hover_region40{
+	width:50px;height:50px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1135px -250px;margin-left:201px;margin-top:414px;}
+.sprite_index_tn_tn_hover_region32{
+	width:123px;height:103px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -965px -233px;margin-left:137px;margin-top:284px;}
+.sprite_index_tn_tn_hover_region33{
+	width:100px;height:55px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -470px -0px;margin-left:195px;margin-top:0px;}
+.sprite_index_tn_tn_hover_region34{
+	width:110px;height:110px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -735px -18px;margin-left:73px;margin-top:120px;}
+.sprite_index_tn_tn_hover_region35{
+	width:95px;height:78px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -478px -75px;margin-left:196px;margin-top:31px;}
+.sprite_index_tn_tn_hover_region36{
+	width:90px;height:92px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -855px -7px;margin-left:101px;margin-top:188px;}
+.sprite_index_tn_tn_hover_region37{
+	width:120px;height:90px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -955px -9px;margin-left:281px;margin-top:279px;}
+.sprite_index_tn_tn_hover_region42{
+	width:50px;height:50px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -1000px -365px;margin-left:76px;margin-top:413px;}
+.sprite_index_tn_tn_hover_region38{
+	width:120px;height:100px;background:url("../mobile/uploaded_files/carte/carte.png") no-repeat -870px -335px;margin-left:265px;margin-top:218px;}
+
+
+

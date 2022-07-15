@@ -1,0 +1,12 @@
+Dear Member, 
+
+Following reply has been posted in response to your topic:
+
+Topic: {topic}
+Reply: {reply} 
+Posted By: {post_reply}
+
+{link}
+
+The {SITE} Team 
+{SITE_PATH}

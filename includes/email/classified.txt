@@ -1,0 +1,19 @@
+Dear Member, 
+
+Here is a your classified detail that you have posted-
+
+Id:  {key}
+Title: {title}
+Category: {cat}
+Subcategory:{subcat}
+Street:{street}
+Zipcode:{zipcode}
+City:{city}
+State:{state}
+
+{link}
+
+The {SITE} Team 
+{SITE_PATH}
+
+

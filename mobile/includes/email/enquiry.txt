@@ -1,0 +1,9 @@
+There is an inquiry related to the following classified in your account:
+
+Classified ID: {key}
+
+Classified Title: {title}
+
+
+The Yeaonay Team
+
