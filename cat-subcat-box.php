@@ -23,7 +23,7 @@ $main_cat_link11="classified-listing.php?catId=".$cat_Arr[11]['catId'];
 
 
 <div>
-	<div style="position:relative; left:0px; top:0px; z-index:10;" dir="ltr">
+	<div style="position:relative; left:0px; top:0px; z-index:10; " dir="ltr">
 		<?php echo $link_footer;?>
 	</div>
 </div>

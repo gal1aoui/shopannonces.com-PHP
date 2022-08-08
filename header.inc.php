@@ -43,7 +43,7 @@ $link_curr=get_config_setting(15);
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/form_validater.js"></script>
 <script type="text/javascript" src="js/ajax.js"></script>
-
+<script src="js/cryption.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="js/ekko-lightbox-min.js"></script>
 

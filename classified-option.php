@@ -72,8 +72,8 @@ else
                 	<td colspan="2"><label class="titre">Option(s) choisie(s) de mise en avant:</label></td>
                 </tr>
                 <tr id="ligneHaut_premium" style="display: none;">
-                    <td width="50%">Annonce Premium :</td>
-                    <td width="50%">30 jours (13)€</td>
+                    <td width="50%">Annonce Premium + Protection Mail:</td>
+                    <td width="50%">30 jours (13 + 3)€</td>
                 </tr>
                 <tr id="ligneHaut_couleur" style="display: none;">
                     <td width="50%">Annonce en Couleur :</td>
@@ -248,7 +248,7 @@ var total=0;
 		}
 		
 		if($("#date_fin_premium").attr('checked')){
-			total=Number(total)+Number($("#date_fin_premium").val());
+			total=Number(total)+Number($("#date_fin_premium").val())+3;
 			
 			$("#amount").html('').append(Number(total));
 			$("#ligne_premium").css("display", "");

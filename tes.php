@@ -1,24 +1,25 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-require_once("includes/main.inc.php");
-require_once("front-functions.php");
+    <style>
+        .cover {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>click</button>
 
+    <div class="cover">
 
-require_once("header.inc.php");
-require_once("arrays.inc.php");
-
-$cryptinstall="cryptographp.fct.php";
-include $cryptinstall;
-
-$dtjour= date("Y-m-d");
-
-$ft = db_query("SELECT * from tbl_classified where  DATE_FORMAT(`date_fin_premium`, '%Y-%m-%d') > DATE_FORMAT('".$dtjour."', '%Y-%m-%d') ");
-echo mysql_num_rows($ft);
-
-while($line_raw = mysql_fetch_row($ft)){
-echo "<pre><h1>";
-
-echo $line_raw[3];
-echo "</h1></pre>";
-}
-?>
+    </div>
+</body>
+</html>

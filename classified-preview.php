@@ -180,7 +180,7 @@ if(!empty($im_arr_big)){
           </div>
           
           <?php
-		  if(count($im_big)>1){?>
+		 if(count($im_arr_big)>1){?>
               <div class="m-scooch-controls">
                 <a href="#" data-m-slide="prev">&lsaquo; Pr&eacute;c&eacute;dent</a>
                 <a href="#" data-m-slide="next">Suivant &rsaquo;</a>            
@@ -201,7 +201,7 @@ if(!empty($im_arr_big)){
 	}
 ?>
 
-		<div class=" mt17">
+		<div class=" mt20">
 			<table width="100%" border="0" cellspacing="2" cellpadding="2">
                         
                         <?php
@@ -357,10 +357,7 @@ if(!empty($im_arr_big)){
     </div>
 </div>
                     
-				
-				
-				
-		</div>
+</div>
 
 <script>
 		$(document).ready(function() {

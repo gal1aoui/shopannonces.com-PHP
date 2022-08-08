@@ -30,22 +30,14 @@ if(!empty($reccnt) && $reccnt > 0 ){
 			$img_name[]=$res1['cls_img_file'];
 			$autoID[]=$res1['clsd_img_id']; 
 			if($res1[cls_img_file]!="" && file_exists($file_sm)){
-				$link[]= '
-				<div id="demoLightbox'.$i.'" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="lightbox-content">
-						<img src="mobile/uploaded_files/classified_img/101636216.jpg">
-						<div class="lightbox-caption"><p>Your caption here</p></div>
-					</div>
-				</div>
-				
-				
-				<a data-toggle="lightbox" href="#demoLightbox'.$i.'">Open Lightbox</a>
-								
-				
-				
-				<a href="mobile/uploaded_files/classified_img/'.$res1[cls_img_file].'" class="link1 u" rel="facebox">Voir Photo</a>
-				|
-				<a href="edit-my-post.php?clsId='.$recID.'&imgdelId='.$res1[clsd_img_id].'&im='.trim($res1[cls_img_file]).'" class="link1 u">Effacer</a>'  ;
+				$link[]= '<div style="display: flex">
+						<img src="mobile/uploaded_files/classified_img/'.$res1[cls_img_file].'" class="img-light">									
+                <div style="margin-top: 60px; margin-left: 10px;">
+				<a href="mobile/uploaded_files/classified_img/'.$res1[cls_img_file].'" class="link1 u btn btn-success " rel="facebox">Voir Photo</a>
+                <br/>
+				<a href="edit-my-post.php?clsId='.$recID.'&imgdelId='.$res1[clsd_img_id].'&im='.trim($res1[cls_img_file]).'" class="link1 u btn btn-danger" style="margin-top: 15px">Effacer</a>
+                </div></div>
+                ';
 			}
 			$i++;
 		}
@@ -492,14 +484,30 @@ $cat_level_two = $_POST["cat_level_two"];
                 }
                 </script>
                 <div id="filestore">
-                <input name="file1" id="file1" type="file" class="textbox1" size="44" onChange="readURL(this,blah1);" /><?php echo $link[0];?><br />
-                <input name="file2" id="file2" type="file" class="textbox1" size="44" onChange="readURL(this,blah2);" /><?php echo $link[1];?><br />
-                <input name="file3" id="file3" type="file" class="textbox1" size="44" onChange="readURL(this,blah3);" /><?php echo $link[2];?><br />
-                <input name="file4" id="file4" type="file" class="textbox1" size="44" onChange="readURL(this,blah4);" /><?php echo $link[3];?><br />
-                <input name="file5" id="file5" type="file" class="textbox1" size="44" onChange="readURL(this,blah5);" /><?php echo $link[4];?><br />
-                <input name="file6" id="file6" type="file" class="textbox1" size="44" onChange="readURL(this,blah6);" /><?php echo $link[5];?><br />
-                <input name="file7" id="file7" type="file" class="textbox1" size="44" onChange="readURL(this,blah7);" /><?php echo $link[6];?><br />
-                <input name="file8" id="file8" type="file" class="textbox1" size="44" onChange="readURL(this,blah8);" /><?php echo $link[7];?><br />
+                    <div class="border_img">
+                        <input name="file1" id="file1" type="file" class="textbox1" size="44" onChange="readURL(this,blah1);" /><?php echo $link[0];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file2" id="file2" type="file" class="textbox1" size="44" onChange="readURL(this,blah2);" /><?php echo $link[1];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file3" id="file3" type="file" class="textbox1" size="44" onChange="readURL(this,blah3);" /><?php echo $link[2];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file4" id="file4" type="file" class="textbox1" size="44" onChange="readURL(this,blah4);" /><?php echo $link[3];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file5" id="file5" type="file" class="textbox1" size="44" onChange="readURL(this,blah5);" /><?php echo $link[4];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file6" id="file6" type="file" class="textbox1" size="44" onChange="readURL(this,blah6);" /><?php echo $link[5];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file7" id="file7" type="file" class="textbox1" size="44" onChange="readURL(this,blah7);" /><?php echo $link[6];?><br />
+                    </div>
+                    <div class="border_img">
+                        <input name="file8" id="file8" type="file" class="textbox1" size="44" onChange="readURL(this,blah8);" /><?php echo $link[7];?><br />
+                    </div>
                 </div>
                 </td>
                 </tr>

@@ -31,12 +31,12 @@ if($link_pravicy!=""){
     </div>
     
     
-    <div class="grid_16 grey-color">&nbsp;
+    <!-- <div class="grid_16 grey-color">&nbsp;
         <div class="grid_12" style="font-size: 11px; color: #FFFFFF; margin:0px;">&nbsp;
-            <?php if($pagename!="index.php" && $pagename!="classified-details.php") echo $link_footer;?>
+            <?php //if($pagename!="index.php" && $pagename!="classified-details.php") echo $link_footer;?>
         </div>
-        
-        <a href="https://plus.google.com/+mesannonces" rel="publisher">Google+</a>
+         -->
+        <!-- <a href="https://plus.google.com/+mesannonces" rel="publisher">Google+</a> -->
     </div>
 </div>
 
